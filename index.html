@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<!--
+  AI Research Lab — CIS Department
+  v6.0 — Full Upgrade | Developer: Nusrat
+  + Publications (stacking scroll cards)
+  + Projects (horizontal showcase)
+  + Graduate Section (infinite marquee rows)
+  + Join Our Team CTA
+  + Logo updated to "AI Research Lab"
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Research Lab - CIS Department. Advancing the frontiers of artificial intelligence." />
+  <title>AI Research Lab — CIS Department</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR — "AI Research Lab" logo
+═══════════════════════════════════════ -->
+<nav id="mainNav" class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="logo-hex">⬡</span>
+      <span class="logo-full">AI Research <span class="logo-accent">Lab</span></span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#home"         class="nlink">Home</a></li>
+      <li><a href="#about"        class="nlink">About</a></li>
+      <li><a href="#research"     class="nlink">Research</a></li>
+      <li><a href="#publications" class="nlink">Publications</a></li>
+      <li><a href="#projects"     class="nlink">Projects</a></li>
+      <li><a href="#team"         class="nlink">Team</a></li>
+      <li><a href="#graduates"    class="nlink">Graduates</a></li>
+      <li><a href="#contact"      class="nlink">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+      </button>
+      <button id="burgerBtn" class="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mob-menu">
+    <a href="#home"         class="mob-link">Home</a>
+    <a href="#about"        class="mob-link">About</a>
+    <a href="#research"     class="mob-link">Research</a>
+    <a href="#publications" class="mob-link">Publications</a>
+    <a href="#projects"     class="mob-link">Projects</a>
+    <a href="#team"         class="mob-link">Team</a>
+    <a href="#graduates"    class="mob-link">Graduates</a>
+    <a href="#contact"      class="mob-link">Contact</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="home" class="hero-section">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="hero-bg-img" src="hero-bg.jpg" alt="" loading="eager" />
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-grid-overlay"></div>
+  </div>
+  <div class="hero-particles" aria-hidden="true">
+    <span class="p p1"></span><span class="p p2"></span>
+    <span class="p p3"></span><span class="p p4"></span>
+  </div>
+  <div class="container hero-body">
+    <div class="row align-items-center hero-row">
+      <div class="col-lg-7 hero-left">
+        <div class="hero-chip"><span class="chip-dot"></span>CIS Department · Established 2018</div>
+        <h1 class="hero-title">Advancing<br><span class="grad-text">Artificial</span><br>Intelligence</h1>
+        <p class="hero-desc">The AI Research Lab at the CIS Department is dedicated to pushing the boundaries of machine intelligence — building systems that are not just smart, but responsible, interpretable, and human-centered.</p>
+        <div class="hero-btns">
+          <a href="#research"  class="btn-blue">Explore Research <i class="bi bi-arrow-right"></i></a>
+          <a href="#projects"  class="btn-glass">View Projects <i class="bi bi-grid"></i></a>
+          <a href="#contact"   class="btn-wire">Join Our Lab <i class="bi bi-person-plus"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hs-item"><span class="hs-num">40+</span><span class="hs-lbl">Publications</span></div>
+          <div class="hs-div"></div>
+          <div class="hs-item"><span class="hs-num">12</span><span class="hs-lbl">Active Projects</span></div>
+          <div class="hs-div"></div>
+          <div class="hs-item"><span class="hs-num">6</span><span class="hs-lbl">Research Areas</span></div>
+          <div class="hs-div"></div>
+          <div class="hs-item"><span class="hs-num">25+</span><span class="hs-lbl">Collaborators</span></div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+        <div class="orb-wrap">
+          <div class="orb-ring r1"></div><div class="orb-ring r2"></div><div class="orb-ring r3"></div>
+          <div class="orb-core">AI</div>
+          <span class="orb-node on-ml">ML</span><span class="orb-node on-dl">DL</span>
+          <span class="orb-node on-cv">CV</span><span class="orb-node on-nlp">NLP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span class="sc-dot"></span></a>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section id="about" class="page-sec bg-soft">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">Who We Are</span>
+      <h2 class="sec-h2">About the Lab</h2>
+      <p class="sec-sub">A multidisciplinary research environment where innovation meets rigor.</p>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-md-6 sr" style="--sd:.05s">
+        <div class="info-card h-100">
+          <div class="ic-icon ic-blue"><i class="bi bi-building"></i></div>
+          <h3>Background</h3>
+          <p>Founded in 2018 under the Computing &amp; Information Sciences (CIS) Department, our lab was established to address real-world challenges through applied and theoretical AI research. Over six years, we have grown from a small group of five researchers to a dynamic team spanning multiple disciplines.</p>
+          <p>We are housed in the Technology Innovation Center on campus, equipped with high-performance GPU clusters, robotics platforms, and dedicated data science workstations.</p>
+        </div>
+      </div>
+      <div class="col-md-6 sr" style="--sd:.10s">
+        <div class="info-card h-100">
+          <div class="ic-icon ic-indigo"><i class="bi bi-eye"></i></div>
+          <h3>Vision</h3>
+          <p>We envision a future where AI acts as a partner to humanity — augmenting human capabilities, accelerating scientific discovery, and solving problems that were previously considered unsolvable.</p>
+          <p>Our long-term vision is to be a globally recognized center of AI excellence, producing research that is not only technically cutting-edge but also ethically grounded and socially responsible.</p>
+        </div>
+      </div>
+      <div class="col-md-6 sr" style="--sd:.15s">
+        <div class="info-card h-100">
+          <div class="ic-icon ic-sky"><i class="bi bi-bullseye"></i></div>
+          <h3>Goals</h3>
+          <ul class="ic-list">
+            <li><i class="bi bi-check-circle-fill"></i>Publish high-impact AI research in top-tier venues.</li>
+            <li><i class="bi bi-check-circle-fill"></i>Train the next generation of AI scientists and engineers.</li>
+            <li><i class="bi bi-check-circle-fill"></i>Bridge the gap between academic research and industry application.</li>
+            <li><i class="bi bi-check-circle-fill"></i>Foster international research collaborations.</li>
+            <li><i class="bi bi-check-circle-fill"></i>Develop open-source tools and datasets for the community.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 sr" style="--sd:.20s">
+        <div class="info-card h-100">
+          <div class="ic-icon ic-teal"><i class="bi bi-gift"></i></div>
+          <h3>Our Contribution</h3>
+          <p>The lab has contributed to society through practical AI deployments in healthcare diagnostics, smart city systems, and environmental monitoring. Our NLP tools have been adopted by three regional hospitals to assist with medical record analysis.</p>
+          <p>We run annual AI workshops and hackathons, opening our facilities to undergraduate students and providing mentored research opportunities to over 60 students per year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     RESEARCH AREAS
+═══════════════════════════════════════ -->
+<section id="research" class="page-sec">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">What We Study</span>
+      <h2 class="sec-h2">Research Areas</h2>
+      <p class="sec-sub">Our work spans six core domains, each intersecting to create a holistic understanding of intelligence.</p>
+    </div>
+    <div class="r-grid mt-5">
+      <div class="r-card sr" style="--sd:.00s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-cpu"></i></div><span class="r-badge">Core</span></div>
+        <h3 class="r-h">Machine Learning</h3>
+        <p class="r-p">Developing algorithms that learn patterns from data to make predictions and decisions without being explicitly programmed.</p>
+        <div class="r-tags"><span>Supervised Learning</span><span>Reinforcement Learning</span><span>Model Optimization</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="r-card sr" style="--sd:.07s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-layers"></i></div><span class="r-badge">Advanced</span></div>
+        <h3 class="r-h">Deep Learning</h3>
+        <p class="r-p">Designing multi-layered neural networks capable of learning complex representations from large-scale unstructured data.</p>
+        <div class="r-tags"><span>Transformers</span><span>CNNs / RNNs</span><span>Generative Models</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="r-card sr" style="--sd:.14s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-camera"></i></div><span class="r-badge">Applied</span></div>
+        <h3 class="r-h">Computer Vision</h3>
+        <p class="r-p">Teaching machines to interpret and understand visual information from images, video, and real-time sensor feeds.</p>
+        <div class="r-tags"><span>Object Detection</span><span>Segmentation</span><span>3D Reconstruction</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="r-card sr" style="--sd:.21s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-chat-text"></i></div><span class="r-badge">Emerging</span></div>
+        <h3 class="r-h">Natural Language Processing</h3>
+        <p class="r-p">Enabling machines to read, understand, and generate human language — powering smarter communication between humans and AI.</p>
+        <div class="r-tags"><span>LLMs</span><span>Sentiment Analysis</span><span>Machine Translation</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="r-card sr" style="--sd:.28s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-robot"></i></div><span class="r-badge">Interdisciplinary</span></div>
+        <h3 class="r-h">Robotics</h3>
+        <p class="r-p">Fusing AI with physical systems to build robots that perceive, plan, and act in real-world environments autonomously.</p>
+        <div class="r-tags"><span>Motion Planning</span><span>Autonomous Agents</span><span>Human-Robot Interaction</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="r-card sr" style="--sd:.35s">
+        <div class="r-top"><div class="r-ico"><i class="bi bi-bar-chart-line"></i></div><span class="r-badge">Foundation</span></div>
+        <h3 class="r-h">Data Science</h3>
+        <p class="r-p">Extracting actionable insights from massive, messy datasets using statistical methods, visualization, and AI-driven analysis.</p>
+        <div class="r-tags"><span>Big Data</span><span>Data Pipelines</span><span>Predictive Analytics</span></div>
+        <a href="#publications" class="r-link">View Publications <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     PUBLICATIONS — Stacking scroll cards
+     Cards stack as user scrolls (position: sticky)
+     Each card sits on top of the previous one
+════════════════════════════════════════════════════ -->
+<section id="publications" class="page-sec pub-section bg-soft">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">Our Research Output</span>
+      <h2 class="sec-h2">Publications</h2>
+      <p class="sec-sub">Peer-reviewed work published in top-tier AI venues — NeurIPS, ICML, CVPR, and beyond.</p>
+    </div>
+
+    <!-- Stacking cards container -->
+    <div class="pub-stack" id="pubStack">
+
+      <div class="pub-card-wrap">
+        <div class="pub-card sr" style="--sd:.05s">
+          <div class="pub-meta">
+            <span class="pub-year">2024</span>
+            <span class="pub-tag tag-ml">Machine Learning</span>
+          </div>
+          <h3 class="pub-title">Adaptive Reinforcement Learning for Real-Time Clinical Decision Support Systems</h3>
+          <p class="pub-desc">We propose an adaptive RL framework that learns patient-specific treatment pathways, achieving a 31% improvement in decision accuracy over static baselines across three hospital datasets.</p>
+          <div class="pub-venue"><i class="bi bi-journal-bookmark-fill"></i> NeurIPS 2024</div>
+          <div class="pub-footer">
+            <div class="pub-authors">Md. Sarwar Hossain · Md. Mehedi Hassan · Nusrat Begum</div>
+            <a href="#" class="pub-btn">View Paper <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card-wrap">
+        <div class="pub-card sr" style="--sd:.10s">
+          <div class="pub-meta">
+            <span class="pub-year">2024</span>
+            <span class="pub-tag tag-cv">Computer Vision</span>
+          </div>
+          <h3 class="pub-title">MedScan: Anomaly Detection in Radiology Images via Self-Supervised Contrastive Learning</h3>
+          <p class="pub-desc">MedScan introduces a contrastive self-supervised pipeline for X-ray and MRI anomaly detection that reaches 94.3% sensitivity without requiring manually labeled pathology data.</p>
+          <div class="pub-venue"><i class="bi bi-journal-bookmark-fill"></i> CVPR 2024</div>
+          <div class="pub-footer">
+            <div class="pub-authors">Md. Mehedi Hassan · Shahriar Ahmed Israfil</div>
+            <a href="#" class="pub-btn">View Paper <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card-wrap">
+        <div class="pub-card sr" style="--sd:.15s">
+          <div class="pub-meta">
+            <span class="pub-year">2023</span>
+            <span class="pub-tag tag-nlp">NLP</span>
+          </div>
+          <h3 class="pub-title">LinguaBridge: Cross-Lingual Transfer for Low-Resource South Asian Languages</h3>
+          <p class="pub-desc">LinguaBridge leverages multilingual pre-trained transformers combined with community-curated parallel corpora to achieve state-of-the-art BLEU scores on Bengali–English and Urdu–English translation tasks.</p>
+          <div class="pub-venue"><i class="bi bi-journal-bookmark-fill"></i> EMNLP 2023</div>
+          <div class="pub-footer">
+            <div class="pub-authors">Md. Asif Mahmud Ridoy · Layla Mansoor</div>
+            <a href="#" class="pub-btn">View Paper <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card-wrap">
+        <div class="pub-card sr" style="--sd:.20s">
+          <div class="pub-meta">
+            <span class="pub-year">2023</span>
+            <span class="pub-tag tag-ds">Data Science</span>
+          </div>
+          <h3 class="pub-title">EcoSense: Satellite-Based Deforestation Monitoring with Deep CNN Classification</h3>
+          <p class="pub-desc">EcoSense deploys a multi-scale CNN pipeline on Google Earth Engine to detect land-use change with 89.7% accuracy, enabling near-real-time deforestation alerts for conservation authorities.</p>
+          <div class="pub-venue"><i class="bi bi-journal-bookmark-fill"></i> ICML 2023</div>
+          <div class="pub-footer">
+            <div class="pub-authors">MD. Nasimul Kader Sohel · Hira Qureshi</div>
+            <a href="#" class="pub-btn">View Paper <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card-wrap">
+        <div class="pub-card sr" style="--sd:.25s">
+          <div class="pub-meta">
+            <span class="pub-year">2022</span>
+            <span class="pub-tag tag-ro">Robotics</span>
+          </div>
+          <h3 class="pub-title">Embodied Reinforcement Learning for Dexterous Manipulation in Unstructured Environments</h3>
+          <p class="pub-desc">We present an RL-driven manipulation agent trained entirely in simulation and deployed zero-shot on physical hardware, surpassing human-level grasping success rates on novel household objects.</p>
+          <div class="pub-venue"><i class="bi bi-journal-bookmark-fill"></i> ICRA 2022</div>
+          <div class="pub-footer">
+            <div class="pub-authors">MD. Nasimul Kader Sohel · Omar Raza</div>
+            <a href="#" class="pub-btn">View Paper <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.pub-stack -->
+
+    <div class="text-center mt-5 sr" style="--sd:.1s">
+      <a href="#" class="btn-blue">View All Publications <i class="bi bi-journals ms-1"></i></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     PROJECTS — Horizontal showcase
+════════════════════════════════════════════════════ -->
+<section id="projects" class="page-sec proj-section">
+  <div class="container-fluid px-0">
+    <div class="container">
+      <div class="sec-head text-center sr">
+        <span class="sec-tag">Recent Work</span>
+        <h2 class="sec-h2">Featured Projects</h2>
+        <p class="sec-sub">A selection of our most impactful ongoing and completed research projects.</p>
+      </div>
+    </div>
+
+    <!-- Horizontal scroll track -->
+    <div class="proj-track-wrap sr" style="--sd:.1s">
+      <div class="proj-track" id="projTrack">
+
+        <div class="proj-card">
+          <div class="proj-card-inner">
+            <div class="proj-num">01</div>
+            <div class="proj-icon"><i class="bi bi-heart-pulse"></i></div>
+            <h3 class="proj-title">MedScan AI</h3>
+            <span class="proj-status st-active">Active</span>
+            <p class="proj-desc">AI-powered diagnostic assistant for radiology. Detects anomalies in X-Ray &amp; MRI scans with 94% accuracy using contrastive self-supervised learning.</p>
+            <div class="proj-skills">
+              <span>Computer Vision</span><span>PyTorch</span><span>Healthcare API</span>
+            </div>
+            <a href="#" class="proj-link">Explore <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-card-inner">
+            <div class="proj-num">02</div>
+            <div class="proj-icon"><i class="bi bi-translate"></i></div>
+            <h3 class="proj-title">LinguaBridge</h3>
+            <span class="proj-status st-active">Active</span>
+            <p class="proj-desc">Low-resource NLP translation system for under-represented South Asian languages. Leverages transfer learning and community-curated datasets.</p>
+            <div class="proj-skills">
+              <span>NLP</span><span>HuggingFace</span><span>Deep Learning</span>
+            </div>
+            <a href="#" class="proj-link">Explore <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-card-inner">
+            <div class="proj-num">03</div>
+            <div class="proj-icon"><i class="bi bi-tree"></i></div>
+            <h3 class="proj-title">EcoSense</h3>
+            <span class="proj-status st-done">Completed</span>
+            <p class="proj-desc">Satellite imagery analysis with deep CNN classification for real-time deforestation monitoring and land-use change detection at country scale.</p>
+            <div class="proj-skills">
+              <span>TensorFlow</span><span>Google Earth Engine</span><span>OpenCV</span>
+            </div>
+            <a href="#" class="proj-link">Explore <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-card-inner">
+            <div class="proj-num">04</div>
+            <div class="proj-icon"><i class="bi bi-robot"></i></div>
+            <h3 class="proj-title">RoboNav</h3>
+            <span class="proj-status st-active">Active</span>
+            <p class="proj-desc">Sim-to-real robot manipulation agent trained with embodied RL. Achieves zero-shot transfer to novel environments with dexterous grasping capability.</p>
+            <div class="proj-skills">
+              <span>Reinforcement Learning</span><span>ROS</span><span>PyBullet</span>
+            </div>
+            <a href="#" class="proj-link">Explore <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-card-inner">
+            <div class="proj-num">05</div>
+            <div class="proj-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3 class="proj-title">PredictIQ</h3>
+            <span class="proj-status st-active">Active</span>
+            <p class="proj-desc">Large-scale predictive analytics platform for urban resource planning. Combines time-series modelling with spatial data pipelines for city-level forecasting.</p>
+            <div class="proj-skills">
+              <span>Data Science</span><span>Python</span><span>BigQuery</span>
+            </div>
+            <a href="#" class="proj-link">Explore <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /.proj-track -->
+
+      <!-- Scroll arrows -->
+      <button class="proj-arrow proj-prev" id="projPrev" aria-label="Previous">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="proj-arrow proj-next" id="projNext" aria-label="Next">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Drag hint -->
+    <p class="proj-hint text-center sr" style="--sd:.2s">
+      <i class="bi bi-hand-index"></i> Drag or use arrows to explore
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TEAM
+═══════════════════════════════════════ -->
+<section id="team" class="page-sec bg-soft">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">The People</span>
+      <h2 class="sec-h2">Meet Our Team</h2>
+      <p class="sec-sub">Our strength lies in the diversity of thought, background, and expertise our members bring.</p>
+    </div>
+
+    <!-- Director -->
+    <div class="team-tier mt-5">
+      <div class="tier-label">Lab Director</div>
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-3 col-md-5 col-sm-6 sr">
+          <div class="tm-card">
+            <div class="tm-av-wrap">
+              <div class="tm-av av-dir" data-i="MS">
+                <img src="https://ai-research-lab-green.vercel.app/sarwar.jpg" class="tm-img" alt="Md. Sarwar Hossain Mollah" loading="lazy">
+              </div>
+              <div class="tm-ov">
+                <p class="ov-name">Md. Sarwar Hossain Mollah</p>
+                <p class="ov-role">Lab Director · Assoc. Prof &amp; Head, CIS</p>
+                <div class="ov-btns">
+                  <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tm-body">
+              <h4>Md. Sarwar Hossain Mollah</h4>
+              <span class="tm-role">Lab Director · Assoc. Prof &amp; Head, CIS</span>
+              <p class="tm-bio">PhD in Machine Learning. 15 years of research with 80+ publications in NeurIPS, ICML, and CVPR.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.07s">
+          <div class="tm-card">
+            <div class="tm-av-wrap">
+              <div class="tm-av" data-i="NK">
+                <img src="https://ai-research-lab-green.vercel.app/kader.png" class="tm-img" alt="MD. Nasimul Kader Sohel" loading="lazy">
+              </div>
+              <div class="tm-ov">
+                <p class="ov-name">MD. Nasimul Kader Sohel</p>
+                <p class="ov-role">Robotics &amp; AI Systems</p>
+                <div class="ov-btns">
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tm-body">
+              <h4>MD. Nasimul Kader Sohel</h4>
+              <span class="tm-role">Robotics &amp; AI Systems</span>
+              <p class="tm-bio">Works on embedded AI for autonomous robots and reinforcement learning for control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Senior Researchers -->
+    <div class="team-tier">
+      <div class="tier-label">Senior Researchers</div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.05s">
+          <div class="tm-card">
+            <div class="tm-av-wrap">
+              <div class="tm-av" data-i="MH">
+                <img src="https://ai-research-lab-green.vercel.app/Mehedi.jpg" class="tm-img" alt="Md. Mehedi Hassan" loading="lazy">
+              </div>
+              <div class="tm-ov">
+                <p class="ov-name">Md. Mehedi Hassan</p><p class="ov-role">Computer Vision Lead</p>
+                <div class="ov-btns"><a href="#"><i class="bi bi-github"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+              </div>
+            </div>
+            <div class="tm-body">
+              <h4>Md. Mehedi Hassan</h4>
+              <span class="tm-role">Computer Vision Lead</span>
+              <p class="tm-bio">Specialist in medical imaging AI and autonomous systems perception.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.10s">
+          <div class="tm-card">
+            <div class="tm-av-wrap">
+              <div class="tm-av" data-i="AR">
+                <img src="https://ai-research-lab-green.vercel.app/asif.jpg" class="tm-img" alt="Md. Asif Mahmud Ridoy" loading="lazy">
+              </div>
+              <div class="tm-ov">
+                <p class="ov-name">Md. Asif Mahmud Ridoy</p><p class="ov-role">NLP Research Lead</p>
+                <div class="ov-btns"><a href="#"><i class="bi bi-github"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+              </div>
+            </div>
+            <div class="tm-body">
+              <h4>Md. Asif Mahmud Ridoy</h4>
+              <span class="tm-role">NLP Research Lead</span>
+              <p class="tm-bio">Focused on multilingual large language models and low-resource languages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.15s">
+          <div class="tm-card">
+            <div class="tm-av-wrap">
+              <div class="tm-av" data-i="SI">
+                <img src="https://ai-research-lab-green.vercel.app/Israfil.png" class="tm-img" alt="Shahriar Ahmed Israfil" loading="lazy">
+              </div>
+              <div class="tm-ov">
+                <p class="ov-name">Shahriar Ahmed Israfil</p><p class="ov-role">Robotics &amp; AI Systems</p>
+                <div class="ov-btns"><a href="#"><i class="bi bi-github"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+              </div>
+            </div>
+            <div class="tm-body">
+              <h4>Shahriar Ahmed Israfil</h4>
+              <span class="tm-role">Robotics &amp; AI Systems</span>
+              <p class="tm-bio">Works on embedded AI for autonomous robots and reinforcement learning .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     GRADUATES — Infinite auto-scroll marquee (2 rows)
+     Row 1: right-to-left  |  Row 2: left-to-right
+════════════════════════════════════════════════════ -->
+<section id="graduates" class="page-sec grad-section">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">Our Alumni &amp; Students</span>
+      <h2 class="sec-h2">Graduate Students</h2>
+      <p class="sec-sub">The brilliant minds shaping the future of AI research at our lab.</p>
+    </div>
+  </div>
+
+  <!-- Row 1: scrolls RIGHT → LEFT -->
+  <div class="marquee-wrap mt-5">
+    <div class="marquee-track marquee-ltr" aria-label="Graduate students row 1">
+      <!-- Cards duplicated for seamless loop -->
+      <div class="grad-card"><div class="grad-av" data-i="NB">NB</div><div class="grad-info"><strong>Nusrat Begum</strong><span>Deep Learning</span><p>Thesis: LLM fine-tuning for low-resource Bengali NLP tasks.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="ZK">ZK</div><div class="grad-info"><strong>Zaid Khan</strong><span>Computer Vision</span><p>Thesis: Real-time 3D object reconstruction from monocular video.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="LM">LM</div><div class="grad-info"><strong>Layla Mansoor</strong><span>NLP</span><p>Thesis: Multilingual sentiment analysis for social media text.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="OR">OR</div><div class="grad-info"><strong>Omar Raza</strong><span>Robotics</span><p>Thesis: Sim-to-real transfer learning for robotic manipulation.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="HQ">HQ</div><div class="grad-info"><strong>Hira Qureshi</strong><span>Data Science</span><p>Thesis: Predictive analytics for urban traffic optimisation.</p></div></div>
+      <!-- Duplicate set for seamless loop -->
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="NB">NB</div><div class="grad-info"><strong>Nusrat Begum</strong><span>Deep Learning</span><p>Thesis: LLM fine-tuning for low-resource Bengali NLP tasks.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="ZK">ZK</div><div class="grad-info"><strong>Zaid Khan</strong><span>Computer Vision</span><p>Thesis: Real-time 3D object reconstruction from monocular video.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="LM">LM</div><div class="grad-info"><strong>Layla Mansoor</strong><span>NLP</span><p>Thesis: Multilingual sentiment analysis for social media text.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="OR">OR</div><div class="grad-info"><strong>Omar Raza</strong><span>Robotics</span><p>Thesis: Sim-to-real transfer learning for robotic manipulation.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="HQ">HQ</div><div class="grad-info"><strong>Hira Qureshi</strong><span>Data Science</span><p>Thesis: Predictive analytics for urban traffic optimisation.</p></div></div>
+    </div>
+  </div>
+
+  <!-- Row 2: scrolls LEFT → RIGHT -->
+  <div class="marquee-wrap mt-3">
+    <div class="marquee-track marquee-rtl" aria-label="Graduate students row 2">
+      <div class="grad-card"><div class="grad-av" data-i="AS">AS</div><div class="grad-info"><strong>Aryan Sharma</strong><span>Generative AI</span><p>Thesis: Diffusion model fine-tuning for medical image synthesis.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="FR">FR</div><div class="grad-info"><strong>Fatima Rashid</strong><span>Federated Learning</span><p>Thesis: Privacy-preserving ML across distributed hospital networks.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="KA">KA</div><div class="grad-info"><strong>Kamrul Ahmed</strong><span>Graph Neural Networks</span><p>Thesis: GNN-based drug interaction prediction at molecular scale.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="RI">RI</div><div class="grad-info"><strong>Rina Islam</strong><span>Explainable AI</span><p>Thesis: Saliency map methods for transparent medical diagnosis.</p></div></div>
+      <div class="grad-card"><div class="grad-av" data-i="TH">TH</div><div class="grad-info"><strong>Tanvir Hasan</strong><span>Edge AI</span><p>Thesis: Quantized neural networks for IoT sensor deployments.</p></div></div>
+      <!-- Duplicated -->
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="AS">AS</div><div class="grad-info"><strong>Aryan Sharma</strong><span>Generative AI</span><p>Thesis: Diffusion model fine-tuning for medical image synthesis.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="FR">FR</div><div class="grad-info"><strong>Fatima Rashid</strong><span>Federated Learning</span><p>Thesis: Privacy-preserving ML across distributed hospital networks.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="KA">KA</div><div class="grad-info"><strong>Kamrul Ahmed</strong><span>Graph Neural Networks</span><p>Thesis: GNN-based drug interaction prediction at molecular scale.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="RI">RI</div><div class="grad-info"><strong>Rina Islam</strong><span>Explainable AI</span><p>Thesis: Saliency map methods for transparent medical diagnosis.</p></div></div>
+      <div class="grad-card" aria-hidden="true"><div class="grad-av" data-i="TH">TH</div><div class="grad-info"><strong>Tanvir Hasan</strong><span>Edge AI</span><p>Thesis: Quantized neural networks for IoT sensor deployments.</p></div></div>
+    </div> 
+  </div>
+  
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     JOIN OUR TEAM — CTA section
+════════════════════════════════════════════════════ -->
+<section id="join" class="page-sec join-section bg-soft">
+  <div class="container">
+    <div class="join-card sr">
+      <div class="join-glow" aria-hidden="true"></div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="sec-tag">We're Hiring</span>
+          <h2 class="join-title">Join Our Research Team</h2>
+          <p class="join-desc">We are actively looking for passionate PhD candidates, postdoctoral researchers, and undergraduate interns who want to push the boundaries of artificial intelligence. </p>
+          <ul class="join-perks">
+            <li><i class="bi bi-check-circle-fill"></i> Access to high-performance GPU clusters and research infrastructure</li>
+            <li><i class="bi bi-check-circle-fill"></i> Mentorship from internationally recognised faculty</li>
+            <li><i class="bi bi-check-circle-fill"></i> Publish in top-tier AI conferences (NeurIPS, ICML, CVPR)</li>
+           
+          </ul> <br> 
+          <a href="#contact" class="join-btn">
+            Apply Now <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <p class="join-deadline">Next application deadline: <strong>31 August 2025</strong></p>
+        </div>
+        <div class="col-lg-5 text-center text-lg-end">
+          <div class="join-roles">
+            <div class="join-role"><i class="bi bi-mortarboard-fill"></i><span>Graduate <br> Positions</span></div>
+            <div class="join-role"><i class="bi bi-person-workspace"></i><span>Postdoc Roles <br> Intern</span></div>
+            <!-- <div class="join-role"><i class="bi bi-laptop"></i><span>Internships</span></div> -->
+            <div class="join-roles">
+              <div class="join-role"><i class="bi bi-mortarboard-fill"></i><span>Lead <br> Researchers</span></div>
+              <div class="join-role"><i class="bi bi-person-workspace"></i><span>Assistant <br> Researchers</span></div>
+              <!-- <div class="join-role"><i class="bi bi-laptop"></i><span>Internships</span></div> -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section id="contact" class="page-sec">
+  <div class="container">
+    <div class="sec-head text-center sr">
+      <span class="sec-tag">Get in Touch</span>
+      <h2 class="sec-h2">Contact &amp; Collaboration</h2>
+      <p class="sec-sub">Interested in collaborating, joining the lab, or learning more about our research? We would love to hear from you.</p>
+    </div>
+    <div class="row g-4 mt-3 align-items-start">
+      <div class="col-lg-5 sr">
+        <div class="c-info h-100">
+          <h3>Let's Work Together</h3>
+          <p class="c-info-sub">We are open to academic collaborations, industry partnerships, and research internships.</p>
+          <div class="c-row"><div class="c-ico"><i class="bi bi-geo-alt-fill"></i></div><div><strong>Address</strong><span>Technology Innovation Center, Room 304<br>CIS Department, University Campus</span></div></div>
+          <div class="c-row"><div class="c-ico"><i class="bi bi-envelope-fill"></i></div><div><strong>Email</strong><span>airlab@university.edu</span></div></div>
+          <div class="c-row"><div class="c-ico"><i class="bi bi-telephone-fill"></i></div><div><strong>Phone</strong><span>+1 (555) 012-3456</span></div></div>
+          <div class="c-row"><div class="c-ico"><i class="bi bi-clock-fill"></i></div><div><strong>Office Hours</strong><span>Monday – Friday, 9:00 AM – 5:00 PM</span></div></div>
+          <div class="c-socials">
+            <a href="#" class="soc-btn"><i class="bi bi-github"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-book"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 sr" style="--sd:.1s">
+        <div class="c-form">
+          <h3>Send a Message</h3>
+          <div class="row g-3 mt-1">
+            <div class="col-sm-6"><label class="f-lbl" for="fn">First Name</label><input type="text" id="fn" class="f-inp" placeholder="Jane"></div>
+            <div class="col-sm-6"><label class="f-lbl" for="ln">Last Name</label><input type="text" id="ln" class="f-inp" placeholder="Doe"></div>
+            <div class="col-12"><label class="f-lbl" for="em">Email Address</label><input type="email" id="em" class="f-inp" placeholder="you@example.com"></div>
+            <div class="col-12">
+              <label class="f-lbl" for="sub">Subject</label>
+              <select id="sub" class="f-inp">
+                <option value="">Select a topic…</option>
+                <option>Research Collaboration</option>
+                <option>Join the Lab (PhD / Postdoc)</option>
+                <option>Industry Partnership</option>
+                <option>Assistant Researcher</option>
+                <option>Lead Researcher</option>
+              </select>
+            </div>
+            <div class="col-12"><label class="f-lbl" for="msg">Message</label><textarea id="msg" class="f-inp" rows="3" placeholder="Tell us about your research interests…"></textarea></div>
+            <div class="col-12"><button type="button" class="btn-blue w-100" id="submitBtn" onclick="submitForm()">Send Message <i class="bi bi-send ms-1"></i></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER — "AI Research Lab" logo
+═══════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 ft-top">
+      <div class="col-lg-4">
+        <a class="ft-brand" href="#home">
+          <span class="logo-hex">⬡</span>
+          <span class="logo-full">AI Research <span class="logo-accent">Lab</span></span>
+        </a>
+        <p class="ft-desc">Pushing the frontiers of artificial intelligence through rigorous research, open collaboration, and responsible innovation at the CIS Department.</p>
+        <div class="ft-soc">
+          <a href="https://github.com/nafisatabassumnusrat" class="soc-btn sm" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/nafisa-tabassum-nusrat-57134721a/" class="soc-btn sm" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="soc-btn sm"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <h5 class="ft-h">Navigate</h5>
+        <ul class="ft-ul">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#graduates">Graduates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4">
+        <h5 class="ft-h">Research Areas</h5>
+        <ul class="ft-ul">
+          <li><a href="#">Machine Learning</a></li>
+          <li><a href="#">Deep Learning</a></li>
+          <li><a href="#">Computer Vision</a></li>
+          <li><a href="#">NLP</a></li>
+          <li><a href="#">Robotics</a></li>
+          <li><a href="#">Data Science</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4">
+        <h5 class="ft-h">Contact</h5>
+        <ul class="ft-ul no-lk">
+          <li><i class="bi bi-envelope me-2"></i>airlab@university.edu</li>
+          <li><i class="bi bi-telephone me-2"></i>+1 (555) 012-3456</li>
+          <li><i class="bi bi-geo-alt me-2"></i>TIC Room 304, CIS Dept.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-btm">
+      <p>© 2025 AI Research Lab, CIS Department. All rights reserved.</p>
+      <p class="ft-cred">
+        Designed &amp; Developed by <strong>Nusrat</strong> &nbsp;·&nbsp;
+        <a href="https://github.com/nafisatabassumnusrat" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/nafisa-tabassum-nusrat-57134721a/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+'use strict';
+
+/* ══════════════════════════════════
+   THEME TOGGLE
+══════════════════════════════════ */
+var html = document.documentElement;
+var saved = localStorage.getItem('airlab-theme') || 'light';
+html.setAttribute('data-theme', saved);
+document.getElementById('themeIcon').className = saved === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+
+document.getElementById('themeToggle').addEventListener('click', function () {
+  var cur  = html.getAttribute('data-theme');
+  var next = cur === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.getElementById('themeIcon').className = next === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+  localStorage.setItem('airlab-theme', next);
+});
+
+/* ══════════════════════════════════
+   NAVBAR SCROLL BLUR
+══════════════════════════════════ */
+var nav = document.getElementById('mainNav');
+window.addEventListener('scroll', function () {
+  nav.classList.toggle('scrolled', window.scrollY > 55);
+}, { passive: true });
+
+/* ══════════════════════════════════
+   BURGER MENU
+══════════════════════════════════ */
+var burger = document.getElementById('burgerBtn');
+var drawer = document.getElementById('mobileMenu');
+var menuOpen = false;
+function closeMenu() { menuOpen = false; burger.classList.remove('is-open'); drawer.classList.remove('is-open'); }
+burger.addEventListener('click', function () {
+  menuOpen = !menuOpen;
+  burger.classList.toggle('is-open', menuOpen);
+  drawer.classList.toggle('is-open', menuOpen);
+});
+document.querySelectorAll('.mob-link').forEach(function (l) { l.addEventListener('click', closeMenu); });
+document.addEventListener('click', function (e) {
+  if (menuOpen && !burger.contains(e.target) && !drawer.contains(e.target)) closeMenu();
+});
+
+/* ══════════════════════════════════
+   ACTIVE NAV LINK
+══════════════════════════════════ */
+var secs = Array.from(document.querySelectorAll('section[id]'));
+var nls  = document.querySelectorAll('.nlink');
+function setActive() {
+  var pos = window.scrollY + 150;
+  var cur = '';
+  secs.forEach(function (s) { if (s.offsetTop <= pos) cur = s.id; });
+  nls.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
+}
+window.addEventListener('scroll', setActive, { passive: true });
+setActive();
+
+/* ══════════════════════════════════
+   SMOOTH SCROLL
+══════════════════════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    var t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+/* ══════════════════════════════════════════════════════════
+   SCROLL REVEAL  (.sr + .in)
+   Stagger delay via CSS custom property --sd on each element
+══════════════════════════════════════════════════════════ */
+function initReveal() {
+  var els = document.querySelectorAll('.sr');
+  function show(el) { el.classList.add('in'); }
+  els.forEach(function (el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight + 60) show(el);
+  });
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { show(e.target); obs.unobserve(e.target); } });
+    }, { threshold: 0.06, rootMargin: '0px 0px -10px 0px' });
+    els.forEach(function (el) { if (!el.classList.contains('in')) obs.observe(el); });
+  } else {
+    els.forEach(show);
+  }
+  window.addEventListener('scroll', function () {
+    els.forEach(function (el) {
+      if (!el.classList.contains('in')) {
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight + 60) show(el);
+      }
+    });
+  }, { passive: true });
+}
+initReveal();
+document.addEventListener('DOMContentLoaded', initReveal);
+
+
+/* ══════════════════════════════════════════════════════════
+   PUBLICATIONS — Stacking scroll animation
+   Each card sticks in place while the next one slides up over it.
+   Uses position:sticky with increasing top offsets and z-index.
+══════════════════════════════════════════════════════════ */
+(function () {
+  var wraps = document.querySelectorAll('.pub-card-wrap');
+  var CARD_H = 260; // approx visible strip height for sticky offset
+  wraps.forEach(function (wrap, i) {
+    // Stagger the sticky top so each card peeks from behind the previous
+    wrap.style.top = (72 + i * 22) + 'px';
+    wrap.style.zIndex = 10 + i;
+  });
+})();
+
+
+/* ══════════════════════════════════════════════════════════
+   PROJECTS — Horizontal drag scroll + arrow buttons
+══════════════════════════════════════════════════════════ */
+(function () {
+  var track = document.getElementById('projTrack');
+  if (!track) return;
+
+  // Arrow buttons
+  var prev = document.getElementById('projPrev');
+  var next = document.getElementById('projNext');
+  var SCROLL_AMOUNT = 340;
+
+  if (prev) prev.addEventListener('click', function () {
+    track.scrollBy({ left: -SCROLL_AMOUNT, behavior: 'smooth' });
+  });
+  if (next) next.addEventListener('click', function () {
+    track.scrollBy({ left: SCROLL_AMOUNT, behavior: 'smooth' });
+  });
+
+  // Mouse drag scroll
+  var isDown = false, startX = 0, scrollLeft = 0;
+  track.addEventListener('mousedown', function (e) {
+    isDown = true;
+    track.classList.add('dragging');
+    startX    = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  });
+  track.addEventListener('mouseleave', function () { isDown = false; track.classList.remove('dragging'); });
+  track.addEventListener('mouseup',    function () { isDown = false; track.classList.remove('dragging'); });
+  track.addEventListener('mousemove',  function (e) {
+    if (!isDown) return;
+    e.preventDefault();
+    var x    = e.pageX - track.offsetLeft;
+    var walk = (x - startX) * 1.4;
+    track.scrollLeft = scrollLeft - walk;
+  });
+})();
+
+
+/* ══════════════════════════════════════════════════════════
+   GRADUATES — Pause marquee on hover
+══════════════════════════════════════════════════════════ */
+document.querySelectorAll('.marquee-track').forEach(function (track) {
+  track.addEventListener('mouseenter', function () { track.style.animationPlayState = 'paused'; });
+  track.addEventListener('mouseleave', function () { track.style.animationPlayState = 'running'; });
+});
+
+
+/* ══════════════════════════════════
+   CONTACT FORM
+══════════════════════════════════ */
+
+</script>
+</body>
+</html>
