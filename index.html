@@ -60,7 +60,7 @@
   <!-- Hero -->
   <section id="home" class="hero-section">
     <div class="hero-bg" aria-hidden="true">
-      <img class="hero-bg-img" src="hero-bg.jpg" alt="" loading="eager" />
+      <img class="hero-bg-img" src="hero3.jpg" alt="" loading="eager" />
       <div class="hero-bg-overlay"></div>
       <div class="hero-grid-overlay"></div>
     </div>
@@ -167,9 +167,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-     RESEARCH AREAS
-═══════════════════════════════════════ -->
+  <!-- RESEARCH AREAS -->
   <section id="research" class="page-sec">
     <div class="container">
       <div class="sec-head text-center sr">
@@ -311,7 +309,7 @@
           </div>
         </div>
 
-      </div><!-- /.pub-stack -->
+      </div>
 
       <div class="text-center mt-5 sr" style="--sd:.1s">
         <a href="#" class="btn-blue">View All Publications <i class="bi bi-journals ms-1"></i></a>
@@ -320,11 +318,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════════════════
-     PROJECTS — Premium Grid with Stacking Scroll Animation
-     3-col desktop · 2-col tablet · 1-col mobile
-     Each card: image + overlay + fade-slide-up on scroll
-════════════════════════════════════════════════════════════ -->
+  <!-- PROJECTS -->
   <section id="projects" class="page-sec proj-section">
     <div class="container">
 
@@ -519,27 +513,8 @@
       <div class="team-tier">
         <div class="tier-label">Senior Researchers</div>
         <div class="row g-4 justify-content-center">
-          <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.05s">
-            <div class="tm-card">
-              <div class="tm-av-wrap">
-                <div class="tm-av" data-i="MH">
-                  <img src="Mehedi.jpg" class="tm-img" alt="Md. Mehedi Hassan"
-                    loading="lazy">
-                </div>
-                <div class="tm-ov">
-                  <p class="ov-name">Md. Mehedi Hassan</p>
-                  <p class="ov-role">Computer Vision Lead</p>
-                  <div class="ov-btns"><a href="#"><i class="bi bi-github"></i></a><a href="#"><i
-                        class="bi bi-linkedin"></i></a></div>
-                </div>
-              </div>
-              <div class="tm-body">
-                <h4>Md. Mehedi Hassan</h4>
-                <span class="tm-role">Computer Vision Lead</span>
-                <p class="tm-bio">Specialist in medical imaging AI and autonomous systems perception.</p>
-              </div>
-            </div>
-          </div>
+
+      
           <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.10s">
             <div class="tm-card">
               <div class="tm-av-wrap">
@@ -561,6 +536,30 @@
               </div>
             </div>
           </div>
+
+
+          <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.05s">
+            <div class="tm-card">
+              <div class="tm-av-wrap">
+                <div class="tm-av" data-i="MH">
+                  <img src="Mehedi.jpg" class="tm-img" alt="Md. Mehedi Hassan"
+                    loading="lazy">
+                </div>
+                <div class="tm-ov">
+                  <p class="ov-name">Md. Mehedi Hassan</p>
+                  <p class="ov-role">Computer Vision </p>
+                  <div class="ov-btns"><a href="#"><i class="bi bi-github"></i></a><a href="#"><i
+                        class="bi bi-linkedin"></i></a></div>
+                </div>
+              </div>
+              <div class="tm-body">
+                <h4>Md. Mehedi Hassan</h4>
+                <span class="tm-role">Computer Vision </span>
+                <p class="tm-bio">Specialist in medical imaging AI and autonomous systems perception.</p>
+              </div>
+            </div>
+          </div>
+          
           <div class="col-lg-3 col-md-5 col-sm-6 sr" style="--sd:.15s">
             <div class="tm-card">
               <div class="tm-av-wrap">
@@ -588,10 +587,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════════
-     GRADUATES — Infinite auto-scroll marquee (2 rows)
-     Row 1: right-to-left  |  Row 2: left-to-right
-════════════════════════════════════════════════════ -->
+  <!-- GRADUATES -->
   <section id="graduates" class="page-sec grad-section">
     <div class="container">
       <div class="sec-head text-center sr">
@@ -738,9 +734,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════════════════
-     JOIN OUR TEAM — CTA section
-════════════════════════════════════════════════════ -->
+  <!-- JOIN OUR TEAM — CTA section -->
   <section id="join" class="page-sec join-section bg-soft">
     <div class="container">
       <div class="join-card sr">
@@ -782,9 +776,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-     CONTACT
-═══════════════════════════════════════ -->
+  <!-- CONTACT -->
   <section id="contact" class="page-sec">
     <div class="container">
       <div class="sec-head text-center sr">
@@ -856,9 +848,7 @@
   </section>
 
 
-  <!-- ═══════════════════════════════════════
-     FOOTER — "AI Research Lab" logo
-═══════════════════════════════════════ -->
+  <!-- FOOTER — "AI Research Lab" logo -->
   <footer class="site-footer">
     <div class="container">
       <div class="row g-4 ft-top">
@@ -929,9 +919,7 @@
   <script>
     'use strict';
 
-    /* ══════════════════════════════════
-       THEME TOGGLE
-    ══════════════════════════════════ */
+    /* THEME TOGGLE*/
     var html = document.documentElement;
     var saved = localStorage.getItem('airlab-theme') || 'light';
     html.setAttribute('data-theme', saved);
@@ -945,17 +933,13 @@
       localStorage.setItem('airlab-theme', next);
     });
 
-    /* ══════════════════════════════════
-       NAVBAR SCROLL BLUR
-    ══════════════════════════════════ */
+    /*NAVBAR SCROLL BLUR */
     var nav = document.getElementById('mainNav');
     window.addEventListener('scroll', function () {
       nav.classList.toggle('scrolled', window.scrollY > 55);
     }, { passive: true });
 
-    /* ══════════════════════════════════
-       BURGER MENU
-    ══════════════════════════════════ */
+    /* BURGER MENU */
     var burger = document.getElementById('burgerBtn');
     var drawer = document.getElementById('mobileMenu');
     var menuOpen = false;
@@ -970,9 +954,7 @@
       if (menuOpen && !burger.contains(e.target) && !drawer.contains(e.target)) closeMenu();
     });
 
-    /* ══════════════════════════════════
-       ACTIVE NAV LINK
-    ══════════════════════════════════ */
+    /* ACTIVE NAV LINK */
     var secs = Array.from(document.querySelectorAll('section[id]'));
     var nls = document.querySelectorAll('.nlink');
     function setActive() {
@@ -984,9 +966,7 @@
     window.addEventListener('scroll', setActive, { passive: true });
     setActive();
 
-    /* ══════════════════════════════════
-       SMOOTH SCROLL
-    ══════════════════════════════════ */
+    /* SMOOTH SCROLL */
     document.querySelectorAll('a[href^="#"]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         var t = document.querySelector(a.getAttribute('href'));
@@ -994,10 +974,7 @@
       });
     });
 
-    /* ══════════════════════════════════════════════════════════
-       SCROLL REVEAL  (.sr + .in)
-       Stagger delay via CSS custom property --sd on each element
-    ══════════════════════════════════════════════════════════ */
+    /* SCROLL REVEAL  */
     function initReveal() {
       var els = document.querySelectorAll('.sr');
       function show(el) { el.classList.add('in'); }
@@ -1026,11 +1003,7 @@
     document.addEventListener('DOMContentLoaded', initReveal);
 
 
-    /* ══════════════════════════════════════════════════════════
-       PUBLICATIONS — Stacking scroll animation
-       Each card sticks in place while the next one slides up over it.
-       Uses position:sticky with increasing top offsets and z-index.
-    ══════════════════════════════════════════════════════════ */
+    /* PUBLICATIONS  */
     (function () {
       var wraps = document.querySelectorAll('.pub-card-wrap');
       var CARD_H = 260; // approx visible strip height for sticky offset
@@ -1042,21 +1015,15 @@
     })();
 
 
-    /* Projects section is now a plain CSS grid — no JS needed */
 
-
-    /* ══════════════════════════════════════════════════════════
-       GRADUATES — Pause marquee on hover
-    ══════════════════════════════════════════════════════════ */
+    /* GRADUATES — Pause marquee on hover */
     document.querySelectorAll('.marquee-track').forEach(function (track) {
       track.addEventListener('mouseenter', function () { track.style.animationPlayState = 'paused'; });
       track.addEventListener('mouseleave', function () { track.style.animationPlayState = 'running'; });
     });
 
 
-    /* ══════════════════════════════════
-       CONTACT FORM
-    ══════════════════════════════════ */
+    /* CONTACT FORM */
     function submitForm() {
       var btn = document.getElementById('submitBtn');
       btn.innerHTML = '<i class="bi bi-check-circle me-1"></i> Message Sent!';
