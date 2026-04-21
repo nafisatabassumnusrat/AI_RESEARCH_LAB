@@ -537,47 +537,6 @@
   </section>
 
 
-  <!-- JOIN OUR TEAM — CTA section -->
-  <section id="join" class="page-sec join-section bg-soft">
-    <div class="container">
-      <div class="join-card sr">
-        <div class="join-glow" aria-hidden="true"></div>
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="sec-tag">We're Hiring</span>
-            <h2 class="join-title">Join Our Research Team</h2>
-            <p class="join-desc">We are actively looking for passionate PhD candidates, postdoctoral researchers, and
-              undergraduate interns who want to push the boundaries of artificial intelligence. </p>
-            <ul class="join-perks">
-              <li><i class="bi bi-check-circle-fill"></i> Access to high-performance GPU clusters and research
-                infrastructure</li>
-              <li><i class="bi bi-check-circle-fill"></i> Mentorship from internationally recognised faculty</li>
-              <li><i class="bi bi-check-circle-fill"></i> Publish in top-tier AI conferences (NeurIPS, ICML, CVPR)</li>
-      
-            </ul> <br>
-
-            <a href="#contact" class="join-btn">
-              Apply Now <i class="bi bi-arrow-right ms-1"></i>
-            </a>
-            <p class="join-deadline">Next application deadline: <strong>31 August 2025</strong></p>
-
-          </div>
-          <div class="col-lg-5 text-center text-lg-end">
-            <div class="join-roles">
-              <div class="join-role"><i class="bi bi-mortarboard-fill"></i><span>Graduate <br> Positions</span></div>
-              <div class="join-role"><i class="bi bi-person-workspace"></i><span>Postdoc Roles<br>Intern</span></div>
-            </div>
-            <div class="join-roles">
-              <div class="join-role"><i class="bi bi-mortarboard-fill"></i><span>Lead <br>Researchers</span></div>
-              <div class="join-role"><i class="bi bi-person-workspace"></i><span>Assistant <br>Researchers</span></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- CONTACT -->
   <section id="contact" class="page-sec">
@@ -804,18 +763,6 @@
     }
     initReveal();
     document.addEventListener('DOMContentLoaded', initReveal);
-
-
-    /* PUBLICATIONS  */
-    (function () {
-      var wraps = document.querySelectorAll('.pub-card-wrap');
-      var CARD_H = 260; // approx visible strip height for sticky offset
-      wraps.forEach(function (wrap, i) {
-        // Stagger the sticky top so each card peeks from behind the previous
-        wrap.style.top = (72 + i * 22) + 'px';
-        wrap.style.zIndex = 10 + i;
-      });
-    })();
 
 
 
